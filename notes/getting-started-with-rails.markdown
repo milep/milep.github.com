@@ -1,6 +1,7 @@
 ---
 title: Getting started with Rails
 layout: default
+modified: 11.1.2012
 ---
 
 If you are familiar with programming and web technologies, here are some links to get started with rails

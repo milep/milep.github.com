@@ -1,7 +1,7 @@
 ---
 title: Ruby for Java programmer
 layout: default
-modified: 11.1.2011
+modified: 11.1.2012
 ---
 
 
