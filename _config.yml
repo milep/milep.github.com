@@ -1,0 +1,7 @@
+navigation:
+- text: Home
+  url: /index.html
+  layout: root
+- text: Notes
+  url: /notes/index.html
+
