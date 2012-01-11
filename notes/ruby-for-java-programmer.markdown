@@ -1,6 +1,7 @@
 ---
 title: Ruby for Java programmer
 layout: default
+modified: 11.1.2011
 ---
 
 
@@ -59,7 +60,7 @@ str  #=> "a lot"
 ## Method calls are messages
 
 When you have an instance of an object, you don't call functions on it, you send messages to it. If message's name and arguments matches some method, then that method is called. Otherwise a NoMethodError exception is raised, *unless* a method_missing method is defined for the object. 
-*{color:red}TODO* And here is a silly example how to use it.
+
 
 
 
