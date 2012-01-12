@@ -1,10 +1,11 @@
 ---
 title: Getting started with Rails
 layout: default
-modified: 11.1.2012
+modified: 12.1.2012
 ---
 
 If you are familiar with programming and web technologies, here are some links to get started with rails
+For the impatient, first go through the tutorial in the [tryruby.org](http://tryruby.org) and then head to the [Rails for Zombies](http://www.codeschool.com/courses/rails-for-zombies). Both can be done in the browser, so you don't have to install anything.
 
 ## Ruby
 
@@ -12,12 +13,14 @@ If you are familiar with programming and web technologies, here are some links t
 * [Installing for OS X and Linux](http://beginrescueend.com/)
 * [Documentation and API docs](http://www.ruby-doc.org/)
 * [Ruby the language](http://www.ruby-lang.org)
+* [Try Ruby in your browser](http://tryruby.org)
 
 ## Rails
 
 * [Official guides](http://guides.rubyonrails.org/)
 * [API docs](http://api.rubyonrails.org/)
 * Very good [screencasts about Rails](http://railscasts.com/)
+* [Fun Rails tutorial](http://www.codeschool.com/courses/rails-for-zombies)
 
 ## Editors and IDEs
 
