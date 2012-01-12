@@ -30,7 +30,7 @@ BigDecimal h = new BigDecimal("100");
 price.multiply(vat.divide(h)).add(price);
 </pre>
 
-Wouldn't it be nice to just to be able to write (without some external library like "MVEL":http://mvel.codehaus.org/)
+Wouldn't it be nice to just to be able to write (without some external library like [MVEL](http://mvel.codehaus.org/))
 
 <pre>
 (price * vat / h) + price;
