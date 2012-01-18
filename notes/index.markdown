@@ -10,5 +10,7 @@ layout: default
 
 [Picking the right tools](picking-the-right-tools.html)
 
+[Git workflow](git-workflow.html)
+
 [Ohjelmistoprojektin tilaaminen](ohjelmistoprojektin-tilaaminen.html) (draft)
 
