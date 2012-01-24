@@ -1,6 +1,7 @@
 ---
 title: Git workflow
 layout: default
+modified: 24.1.2012
 ---
 
 ## New project
