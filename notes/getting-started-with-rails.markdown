@@ -1,7 +1,7 @@
 ---
 title: Getting started with Rails
 layout: default
-modified: 12.1.2012
+modified: 9.2.2012
 ---
 
 If you are familiar with programming and web technologies, here are some links to get started with rails
@@ -21,6 +21,7 @@ For the impatient, first go through the tutorial in the [tryruby.org](http://try
 * [API docs](http://api.rubyonrails.org/)
 * Very good [screencasts about Rails](http://railscasts.com/)
 * [Fun Rails tutorial](http://www.codeschool.com/courses/rails-for-zombies)
+* [Rails tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book)
 
 ## Editors and IDEs
 

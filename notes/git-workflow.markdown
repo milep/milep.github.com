@@ -107,3 +107,27 @@ Again get changes to master with git fetch & merge
 git merge issue123
 </pre>
 
+### Working with submodules
+
+Initialize submodules of existing project
+
+<pre>
+git submodule init
+git submodule update
+</pre>
+
+If you are going to edit files in the submodules, you should checkout master branch in them
+
+<pre>
+git submodule foreach git checkout master
+</pre>
+
+If you forgot to checkout master and edited some files, but didn't commit them yet
+
+<pre>
+#in submodule directory
+git stash save "in progress"
+git checkout master
+git stash pop
+</pre>
+
