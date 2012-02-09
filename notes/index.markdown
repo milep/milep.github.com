@@ -12,5 +12,7 @@ layout: default
 
 [Git workflow](git-workflow.html)
 
+[JavaScript and HTML](javascript.html)
+
 [Ohjelmistoprojektin tilaaminen](ohjelmistoprojektin-tilaaminen.html) (draft)
 
