@@ -5,6 +5,10 @@ layout: default
 
 This is personal page of Miika Leppänen. Here I promote ideas which I think are worth spreading and share notes about software development.
 
+## Laskulomake
+
+New free service from Eebu: [Print finnish invoices](http://www.laskulomake.fi)
+
 
 ## Software eats the world
 
