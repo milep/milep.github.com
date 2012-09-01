@@ -11,13 +11,15 @@ _currbranch="$(grep "^*" < <("$_git" branch) | cut -d' ' -f2)"
 
 
 if [[ $_currbranch == $_sourcebranch ]]; then
-    _site="$(mktemp -d /tmp/_site.XXXXXXXXX)"
-    cd "$("$_git" rev-parse --show-toplevel)"
-    "$_bundle" ${_opts[@]} . "$_site"
-    "$_git" checkout "$_destbranch"
+    echo "$_currbranch"
+    echo "$_sourcebranch"
+    # _site="$(mktemp -d /tmp/_site.XXXXXXXXX)"
+    # cd "$("$_git" rev-parse --show-toplevel)"
+    # "$_bundle" ${_opts[@]} . "$_site"
+    # "$_git" checkout "$_destbranch"
 
-    cp -rf "$_site"/* .
+    # cp -rf "$_site"/* .
     
-    rm -rfv "$_site"
+    # rm -rfv "$_site"
 fi
 
