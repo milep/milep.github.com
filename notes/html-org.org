@@ -1,0 +1,38 @@
+---
+title: Org to html
+layout: default
+modified: 1.9.2012
+---
+
+* Hello org to html
+  Here are some examples of how [[http://orgmode.org/][org-mode]] document structures will be
+  converted to html. Org [[https://raw.github.com/milep/milep.github.com/master/notes/hello-org.org][source]] file.
+
+** Heading level 2
+   List styles.
+
+*** Unordered
+    - Ardbeg
+    - Laphroaig
+    - Glenfiddich
+
+*** Description list
+    - Bowmore :: Incredibly complex, with beautiful soft fruit and
+                 chocolate balanced with a light smokiness.
+    - Lagavulin :: Dry peat smoke fills the palate with a gentle but
+                   strong sweetness, followed by sea and salt with
+                   touches of wood.
+
+*** Numbered 
+    1. First item
+    2. Second item
+    3. Third item
+
+** Table
+
+   | Item   | Count |
+   |--------+-------|
+   | Apple  |    10 |
+   | Orange |     6 |
+
+

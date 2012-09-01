@@ -19,7 +19,10 @@ GEM
     liquid (2.4.1)
     maruku (0.6.0)
       syntax (>= 1.0.0)
+    org-ruby (0.7.1)
+      rubypants (>= 0.2.0)
     posix-spawn (0.3.6)
+    rubypants (0.2.0)
     syntax (1.0.0)
 
 PLATFORMS
@@ -28,3 +31,4 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   jekyll
+  org-ruby
