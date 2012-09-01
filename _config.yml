@@ -4,4 +4,4 @@ navigation:
   layout: root
 - text: Notes
   url: /notes/index.html
-exclude: vendor
+exclude: vendor, Gemfile, Gemfile.lock, bin
