@@ -18,6 +18,6 @@ if [[ $_currbranch == $_sourcebranch ]]; then
 
     cp -rf "$_site"/* .
     
-    #rm -rfv "$_site"
+    rm -rfv "$_site"
 fi
 
