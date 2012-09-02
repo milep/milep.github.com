@@ -15,6 +15,7 @@ modified: 1.9.2012
     - Ardbeg
     - Laphroaig
     - Glenfiddich
+    - Talisker
 
 *** Description list
     - Bowmore :: Incredibly complex, with beautiful soft fruit and
