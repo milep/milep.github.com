@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Generate site to temp dir and copy it to master branch
+# Github pages doesn't support jekyll-org, so we have to 
+# generate site locally to temp dir and copy it to master branch
 
 _git="/usr/local/bin/git"
 _bundle="/Users/milep/.rbenv/shims/bundle"
