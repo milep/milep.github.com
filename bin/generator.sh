@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Generate site to temp dir and copy it to master branch
 
 _git="/usr/local/bin/git"
 _bundle="/Users/milep/.rbenv/shims/bundle"
