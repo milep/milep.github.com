@@ -1,0 +1,87 @@
+---
+title: From idea to launch in three days
+layout: default
+modified: 1.11.2012
+---
+
+I had registered for the [[http://railsrumble.com/][Rails Rumble]] (2012) which was starting on
+next Saturday, it was Friday and I didn't have any good ideas for the
+application. So I asked in our [[http://www.eebu.com/][company]] chat if anyone got any good
+ones. It came up that our CEO had been queried about an work order
+management application suitable for a bike repair shop few weeks
+earlier. I thought it could be nice and simple [[http://en.wikipedia.org/wiki/Create,_read,_update_and_delete][CRUD]] application that I
+might be able to pull off in a weekend. Then we came up with following
+specifications/user story:
+
+- You have a bike repair shop. 
+- Customer comes in with a broken bike.
+- You create a work order for the bike. It has following info: 
+  - Customer contact info 
+  - Bike brand/make and model 
+  - Work received date 
+  - Estimated due date 
+  - Service advice
+  - Work description
+- Print work order with a barcode(work order id) and attach it to the bike. 
+- Take bike to the service area/storeroom. 
+- Mechanic takes the bike and scans the barcode, this opens the work order. 
+- Mechanic adds work hours, work description and parts used to the work order. 
+- Can set work order state as completed or waiting for parts. 
+- When work order is completed, you call or send text message to the
+  customer (automated messages will be implemented later) 
+- Customer comes for the bike, you print the work order and attach it to the receipt. (You have separate cash register/invoicing systems)
+
+Rest of the Friday I planned data models and researched which
+libraries would be useful for this project.
+
+** Deployment
+
+First thing on Saturday morning was to set up the deployment server
+with Linode. I wanted to try PostgreSQL for it's schema feature(which
+is a kind of namespace in postgres) to handle the customer
+databases. And for running the Rails I was going to use Nginx and
+Unicorn, because I'm more familiar with them than the Apache and
+Passenger, which were the [[http://blog.railsrumble.com/2012/10/11/linode-up-and-running-with-stackscripts/][default setup]]. This was the first time I was
+using Postgres and it took about 3 hours to get the server ready for
+the deployment. Had to learn a bit about user management in Postgres
+and fix it to use UTF-8(oh why won't it be the default setting
+everywhere already).
+
+** Development
+
+[[https://github.com/influitive/apartment/][Apartment]] proved to be really good library to handle the case where
+each customer has it's own schema. Only problem was with the [[https://github.com/EppO/rolify][Rolify]],
+which I couldn't get to work because of how it used join tables and it
+didn't map well with Apartment. So I ditched it and went with simpler
+[[https://github.com/ryanb/cancan/wiki/Role-Based-Authorization][role based authorization]]. From then on there were no major hurdles and
+got all the basic functionality to work before deadline.
+
+** Competition results
+
+The application didn't get much attention, my guess for reasons would
+be:
+- Bad landing page and graphics, I didn't have a designer on the team
+  so I just used default bootstrap theme and some sketches.
+- No proper demo
+- Uninteresting subject for the judges.
+
+That was the "from idea to launch in three calendar days". In work
+hours that means about 35-40 hours.
+
+** What has happened after the competition
+
+We have added some graphics, copywriting and a demo button on the
+landing page. Demo button launches the application in a read only mode
+with some example data. It is also localized in finnish, because we
+are going to sell this at first in Finland. Deployment is moved to our
+own servers and I have created installation scripts for it with
+[[http://puppetlabs.com/][Puppet]]. We got the domain [[http://huollot.fi/][huollot.fi]] for it which roughly translates
+as "maintenance services".
+
+So now we are soft-launching our [[http://huollot.fi/][Work order management]] application and
+if you are interested, you can sign up with registration code
+EEBUBETA.
+
+PS. I'm available for consulting. Contact me at
+[[mailto:miika.leppanen@eebu.com][miika.leppanen@eebu.com]].
+

@@ -5,6 +5,11 @@ layout: default
 
 This is personal page of Miika Leppänen. Here I promote ideas which I think are worth spreading and share notes about software development.
 
+## Work order management
+
+We have launched a new application [Work order management](http://www.huollot.fi) for small repair shops to handle work orders. Here is a [write up](notes/from-idea-to-launch.html) about it's development.
+
+
 ## Laskulomake
 
 New free service from Eebu: [Print finnish invoices](http://www.laskulomake.fi)

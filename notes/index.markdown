@@ -3,6 +3,8 @@ title: Notes
 layout: default
 ---
 
+[From idea to launch in three days](from-idea-to-launch.html)
+
 [Html from org-mode example](html-org.html)
 
 [Getting started with Rails](getting-started-with-rails.html)
