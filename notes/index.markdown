@@ -3,7 +3,7 @@ title: Notes
 layout: default
 ---
 
-[Html form org-mode example](html-org.html)
+[Html from org-mode example](html-org.html)
 
 [Getting started with Rails](getting-started-with-rails.html)
 
