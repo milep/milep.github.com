@@ -1,7 +1,7 @@
 ---
 title: Ruby for Java programmer
 layout: default
-modified: 11.1.2012
+modified: 26.1.2013
 ---
 
 
@@ -9,7 +9,7 @@ Coming from Java and not much exposed to any other programming paradigms, what I
 
 ## In ruby everything is an object
 
-For example numbers are instances of Fixnum class and you can call methods on them. (Note that in Ruby, you can leave the parentheses out of method calls, "more about that":http://blog.grayproductions.net/articles/do_i_need_these_parentheses)
+For example the numbers are instances of a Fixnum class and you can call methods on them. (Note that in Ruby, you can leave the parentheses out of method calls, ["more about that"](http://blog.grayproductions.net/articles/do_i_need_these_parentheses))
 
 <pre>
 123.to_s  #=> "123"
@@ -36,13 +36,12 @@ Wouldn't it be nice to just to be able to write (without some external library l
 (price * vat / h) + price;
 </pre>
 
-You can of course easily shot yourself in the foot with operator overloading, but with great power comes great responsibility.
 
-## Every statement returns something
+## Everything is an expression
 
 Method returns the value of the last statement, unless return statment is explicitly defined.
 
-Even control structures return values, example:
+Even control structures return values, for example:
 
 <pre>
 amount = 50

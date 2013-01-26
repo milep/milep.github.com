@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Miika Leppänen</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Personal site of Miika Leppänen" />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/default.css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28262275-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+  <body style="padding-top: 40px;">
+    <div class="topbar" data-dropdown="dropdown">
+      <div class="topbar-inner">
+        <div class="container">
+          <h3><a href="/">Miika Leppänen</a></h3>
+          <ul class="nav">
+            
+            
+            
+            <li class="">
+              <a href="/index.html">Home</a>
+            </li>
+            
+            
+            
+            <li class="">
+              <a href="/notes/index.html">Notes</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div><!-- /topbar-inner -->
+    </div><!-- /topbar -->
+    <div class="container">
+      <div class="content">
+        <div class="page-header">
+          <h1>From idea to launch in three days</h1>
+        </div>
+        <div class="row">
+          <div class="span10">
+            <div class="modified">
+              
+              This page was last modified: 1.11.2012
+              
+            </div>
+            <p class="title">I had registered for the <a href="http://railsrumble.com/">Rails Rumble</a> (2012) which was starting on next Saturday, it was Friday and I didn&#8217;t have any good ideas for the application. So I asked in our <a href="http://www.eebu.com/">company</a> chat if anyone got any good ones. It came up that our CEO had been queried about an work order management application suitable for a bike repair shop few weeks earlier. I thought it could be nice and simple <a href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> application that I might be able to pull off in a weekend. Then we came up with following specifications/user story:</p>
+<ul>
+  <li>You have a bike repair shop.
+  </li>
+  <li>Customer comes in with a broken bike.
+  </li>
+  <li>You create a work order for the bike. It has following info:
+  <ul>
+    <li>Customer contact info
+    </li>
+    <li>Bike brand/make and model
+    </li>
+    <li>Work received date
+    </li>
+    <li>Estimated due date
+    </li>
+    <li>Service advice
+    </li>
+    <li>Work description
+    </li>
+  </ul>
+  </li>
+  <li>Print work order with a barcode(work order id) and attach it to the bike.
+  </li>
+  <li>Take bike to the service area/storeroom.
+  </li>
+  <li>Mechanic takes the bike and scans the barcode, this opens the work order.
+  </li>
+  <li>Mechanic adds work hours, work description and parts used to the work order.
+  </li>
+  <li>Can set work order state as completed or waiting for parts.
+  </li>
+  <li>When work order is completed, you call or send text message to the customer (automated messages will be implemented later)
+  </li>
+  <li>Customer comes for the bike, you print the work order and attach it to the receipt. (You have separate cash register/invoicing systems)
+  </li>
+</ul>
+<p>Rest of the Friday I planned data models and researched which libraries would be useful for this project.</p>
+<h2>Deployment</h2>
+<p>First thing on Saturday morning was to set up the deployment server with Linode. I wanted to try PostgreSQL for it&#8217;s schema feature(which is a kind of namespace in postgres) to handle the customer databases. And for running the Rails I was going to use Nginx and Unicorn, because I&#8217;m more familiar with them than the Apache and Passenger, which were the <a href="http://blog.railsrumble.com/2012/10/11/linode-up-and-running-with-stackscripts/">default setup</a>. This was the first time I was using Postgres and it took about 3 hours to get the server ready for the deployment. Had to learn a bit about user management in Postgres and fix it to use UTF-8(oh why won&#8217;t it be the default setting everywhere already).</p>
+<h2>Development</h2>
+<p><a href="https://github.com/influitive/apartment/">Apartment</a> proved to be really good library to handle the case where each customer has it&#8217;s own schema. Only problem was with the <a href="https://github.com/EppO/rolify">Rolify</a>, which I couldn&#8217;t get to work because of how it used join tables and it didn&#8217;t map well with Apartment. So I ditched it and went with simpler <a href="https://github.com/ryanb/cancan/wiki/Role-Based-Authorization">role based authorization</a>. From then on there were no major hurdles and got all the basic functionality to work before deadline.</p>
+<h2>Competition results</h2>
+<p>The application didn&#8217;t get much attention, my guess for reasons would be:</p>
+<ul>
+  <li>Bad landing page and graphics, I didn&#8217;t have a designer on the team so I just used default bootstrap theme and some sketches.
+  </li>
+  <li>No proper demo
+  </li>
+  <li>Uninteresting subject for the judges.
+  </li>
+</ul>
+<p>That was the &#8220;from idea to launch in three calendar days&#8221;. In work hours that means about 35-40 hours.</p>
+<h2>What has happened after the competition</h2>
+<p>We have added some graphics, copywriting and a demo button on the landing page. Demo button launches the application in a read only mode with some example data. It is also localized in finnish, because we are going to sell this at first in Finland. Deployment is moved to our own servers and I have created installation scripts for it with <a href="http://puppetlabs.com/">Puppet</a>. We got the domain <a href="http://huollot.fi/">huollot.fi</a> for it which roughly translates as &#8220;maintenance services&#8221;.</p>
+<p>So now we are soft-launching our <a href="http://huollot.fi/">Work order management</a> application and if you are interested, you can sign up with registration code EEBUBETA.</p>
+<p>PS. I&#8217;m available for consulting. Contact me at <a href="mailto:miika.leppanen@eebu.com">miika.leppanen@eebu.com</a>.</p>
+
+          </div>
+          <div class="span4">
+                        <h3>About me</h3>
+            <img src="/images/milep_6_200.jpg" class="center" />
+            <ul>
+              <li>
+                Professionally in software development since 1999
+              </li>
+              <li>
+                Co-founder of <a href="http://www.eebu.com/">Eebu Finland Oy</a>
+              <li>
+                <a href="http://fi.linkedin.com/in/milep">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/101035925352586799794/posts">Google+</a>
+              </li>
+              <li>
+                <a href="mailto:miika.leppanen@eebu.com">miika.leppanen@eebu.com</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; Miika Leppänen</p>
+      </footer>
+    </div>
+  </body>
+</html>
