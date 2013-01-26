@@ -4,7 +4,8 @@ layout: default
 modified: 9.2.2012
 ---
 
-If you are familiar with programming and web technologies, here are some links to get started with rails
+If you are familiar with programming and web technologies, here are some links to get started with rails.
+
 For the impatient, first go through the tutorial in the [tryruby.org](http://tryruby.org) and then head to the [Rails for Zombies](http://www.codeschool.com/courses/rails-for-zombies). Both can be done in the browser, so you don't have to install anything.
 
 ## Ruby
