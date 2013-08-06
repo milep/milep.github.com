@@ -11,7 +11,7 @@ For the impatient, first go through the tutorial in the [tryruby.org](http://try
 ## Ruby
 
 * [Installing for Windows](http://rubyinstaller.org/)
-* [Installing for OS X and Linux](http://beginrescueend.com/)
+* [Installing for OS X and Linux](https://rvm.io/)
 * [Documentation and API docs](http://www.ruby-doc.org/)
 * [Ruby the language](http://www.ruby-lang.org)
 * [Try Ruby in your browser](http://tryruby.org)
