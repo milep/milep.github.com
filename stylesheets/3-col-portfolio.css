@@ -1,0 +1,13 @@
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+.portfolio-item .img-container {
+    height: 120px;
+}
+
+.img-container img {
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
