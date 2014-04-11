@@ -8048,15 +8048,15 @@ nav {
 .intro-header {
   padding-bottom: 50px;
   color: #f8f8f8;
-  background: url(../images/intro-bg.jpg) no-repeat center center;
+  background: url(../images/milep-bg.jpg) no-repeat center center;
   background-size: cover;
-  text-align: center; }
+  /* text-align: center; */ }
 
 /* line 31, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .intro-message {
   position: relative;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding-top: 5%;
+  padding-bottom: 30%;
   font-weight: 700; }
 
 /* line 38, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
@@ -8078,103 +8078,104 @@ nav {
 @media (max-width: 767px) {
   /* line 55, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
   .intro-message {
+    padding-top: 5%;
     padding-bottom: 15%; }
 
-  /* line 59, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+  /* line 60, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
   .intro-message > h1 {
     font-size: 3em; }
 
-  /* line 63, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+  /* line 64, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
   ul.intro-social-buttons > li {
     display: block;
     margin-bottom: 20px;
     padding: 0; }
 
-  /* line 69, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+  /* line 70, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
   ul.intro-social-buttons > li:last-child {
     margin-bottom: 0; }
 
-  /* line 73, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+  /* line 74, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
   .intro-divider {
     width: 100%; } }
-/* line 78, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 79, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .network-name {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px; }
 
-/* line 85, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 86, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .content-section-a {
   background-color: #f8f8f8;
   padding: 50px 0; }
 
-/* line 90, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 91, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .content-section-b {
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
   padding: 50px 0; }
 
-/* line 96, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 97, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .section-heading {
   margin-bottom: 30px; }
 
-/* line 100, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 101, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .section-heading-spacer {
   border-top: 3px solid #e7e7e7;
   width: 200px;
   float: left; }
 
-/* line 106, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 107, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .banner {
   padding: 100px 0;
   color: #f8f8f8;
   background: url(../images/banner-bg.jpg) no-repeat center center;
   background-size: cover; }
 
-/* line 113, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 114, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .banner h2 {
   margin: 0;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   font-size: 3em; }
 
-/* line 119, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 120, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .banner ul {
   margin-bottom: 0; }
 
-/* line 123, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 124, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 .banner-social-buttons {
   float: right;
   margin-top: 0; }
 
 @media (max-width: 1199px) {
-  /* line 129, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+  /* line 130, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
   ul.banner-social-buttons {
     float: left;
     margin-top: 15px; } }
 @media (max-width: 767px) {
-  /* line 136, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+  /* line 137, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
   .banner h2 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em; }
 
-  /* line 142, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+  /* line 143, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
   ul.banner-social-buttons > li {
     display: block;
     margin-bottom: 20px;
     padding: 0; }
 
-  /* line 148, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+  /* line 149, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
   ul.banner-social-buttons > li:last-child {
     margin-bottom: 0; } }
-/* line 153, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 154, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 footer {
   background-color: #f8f8f8;
   padding: 50px 0;
   font-weight: 700; }
 
-/* line 159, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
+/* line 160, /Users/milep/projects/miikaleppanen/source/stylesheets/landing-page.css */
 p.copyright {
   margin: 15px 0 0; }
 

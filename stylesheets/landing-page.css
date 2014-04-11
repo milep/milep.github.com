@@ -23,15 +23,15 @@ nav {
 .intro-header {
     padding-bottom: 50px;
     color: #f8f8f8;
-    background: url(../images/intro-bg.jpg) no-repeat center center;
+    background: url(../images/milep-bg.jpg) no-repeat center center;
     background-size: cover;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 5%;
+    padding-bottom: 30%;
     font-weight: 700;
 }
 
@@ -53,6 +53,7 @@ nav {
 
 @media (max-width: 767px) {
     .intro-message {
+	padding-top: 5%;
 	padding-bottom: 15%;
     }
 
