@@ -23,4 +23,4 @@ As your product progresses through different stages, the approach to its develop
 
 ## Thoughts about implementation
 
-A good development environment enables focusing on feature implementation, and incidents can be traced in production. Deployment to production is straightforward and swift, supported by automated tests. The codebase contains no unused code, with comments clarifying the rationale for specific implementations. The code is predominantly functional, and global state is kept to a minimum. Objects primarily serve as data structures, while functions are utilized to transform the data.
+A good development environment enables focusing on feature implementation, and incidents can be traced in production. Deployment to production is straightforward and swift, supported by automated tests. The codebase contains no unused code, with comments clarifying the rationale for specific implementations. The code is predominantly functional, and global state is kept to a minimum. In the context of basic CRUD apps, objects primarily serve as data structures, while functions are utilized to transform the data.
