@@ -10,7 +10,7 @@ This page reflects my current perspectives on product development, informed by o
 
 _This text is still work in progress_
 
-# Structuring teams and product development
+## Structuring teams and product development
 
 In product development, the key question is 'What to Build?' This involves understanding user needs beyond their explicit requests and having a strong vision. Visionary thinking is crucial, especially when building a new product. Product developers must listen to users, but need to consider the feedback against their broader vision. A fast feedback loop between the developers, domain experts, and users is essential. There are many product discovery methods and frameworks that can help you to find what to build. Essentially those come down to talking to customers, good communication and fast feedback loops with all the stakeholders.
 
@@ -21,6 +21,6 @@ As the company grows, the significance of its organizational structure and the m
 As your product progresses through different stages, the approach to its development needs to adapt. In the early stages, particularly before achieving product-market fit, the focus should be on rapid implementation. Embracing technical debt is acceptable during this phase, as speed is key. If it turns out that the solution being developed is not the right one, the technical debt is discarded along with the solution. However, once the product becomes more established, priorities shift towards maintainability, scalability, and various optimizations. At this stage, technical debt adds friction to progress and must be managed carefully.
 
 
-# Thoughts about implementation
+## Thoughts about implementation
 
 A good development environment enables focusing on feature implementation, and incidents can be traced in production. Deployment to production is straightforward and swift, supported by automated tests. The codebase contains no unused code, with comments clarifying the rationale for specific implementations. The code is predominantly functional, and global state is kept to a minimum. Objects primarily serve as data structures, while functions are utilized to transform the data.
