@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Miika Leppänen's notes about product development.">
+  <title>Miika's notes — Product Development</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f5f0;
+      --fg: #1f2933;
+      --muted: #667085;
+      --link: #2357c6;
+      --rule: #d8d2c4;
+      --card: #fffdf8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111418;
+        --fg: #e6e1d8;
+        --muted: #a8b0ba;
+        --link: #8ab4ff;
+        --rule: #303842;
+        --card: #171b21;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    header,
+    main {
+      width: min(100% - 2rem, 760px);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 3rem 0 1.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    main {
+      padding: 2rem 0 4rem;
+    }
+
+    .site-title {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      margin: 0.75rem 0 0;
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+    }
+
+    h2 {
+      margin-top: 2.75rem;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1.45rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 1.1rem 0;
+    }
+
+    em {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .note {
+      margin: 1.75rem 0;
+      padding: 1rem 1.1rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="site-title">Product Development</h1>
+    <p class="subtitle">Miika Leppänen's notes about product development.</p>
+  </header>
+
+  <main>
+    <p>This page reflects my current perspectives on product development, informed by ongoing experience and learning. It will be periodically updated to incorporate new insights.</p>
+
+    <p class="note"><em>This text is still work in progress.</em></p>
+
+    <h2>Structuring teams and product development</h2>
+
+    <p>In product development, the key question is “What to build?” This involves understanding user needs beyond their explicit requests and having a strong vision. Visionary thinking is crucial, especially when building a new product. Product developers must listen to users, but need to consider the feedback against their broader vision. A fast feedback loop between the developers, domain experts, and users is essential. There are many product discovery methods and frameworks that can help you to find what to build. Essentially, those come down to talking to customers, good communication, and fast feedback loops with all stakeholders.</p>
+
+    <p>Once you have figured out how to determine what to build, you need people to build it. You should have an inspired and competent team that is cross-functional and communicates well. Usually, there are some business stakeholders, a product manager, a designer, and engineers. The team should be empowered to have autonomy and ownership of the product. That is motivating and leads to better outcomes. A good team can find processes that work well for them by themselves, but there are also some well-established best practices that you should study, because successful companies end up having very similar systems at the core.</p>
+
+    <p>As the company grows, the significance of its organizational structure and the management of information flow become increasingly important. For small organizations, a flat structure can work well, while it is easy to keep everyone aligned with the company’s goals. However, with expansion, involving everyone in every aspect becomes impractical. Therefore, establishing effective strategies for information distribution is crucial. This ensures the right team members are informed and involved in crucial decisions, allowing the business to adapt to its growing complexity and maintain organizational efficiency.</p>
+
+    <p>As your product progresses through different stages, the approach to its development needs to adapt. In the early stages, particularly before achieving product-market fit, the focus should be on rapid implementation. Embracing technical debt is acceptable during this phase, as speed is key. If it turns out that the solution being developed is not the right one, the technical debt is discarded along with the solution. However, once the product becomes more established, priorities shift towards maintainability, scalability, and various optimizations. At this stage, technical debt adds friction to progress and must be managed carefully.</p>
+
+    <h2>Thoughts about implementation</h2>
+
+    <p>A good development environment enables focusing on feature implementation, and incidents can be traced in production. Deployment to production is straightforward and swift, supported by automated tests. The codebase contains no unused code, with comments clarifying the rationale for specific implementations. The code is predominantly functional, and global state is kept to a minimum. In the context of basic CRUD apps, objects primarily serve as data structures, while functions are utilized to transform the data.</p>
+  </main>
+</body>
+</html>
